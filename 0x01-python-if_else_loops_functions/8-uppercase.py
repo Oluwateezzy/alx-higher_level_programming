@@ -8,5 +8,3 @@ def uppercase(str):
         else:
             result += chr(lis)
     print("{}".format(result))
-uppercase("best")
-uppercase("Best School 98 Battery street")
