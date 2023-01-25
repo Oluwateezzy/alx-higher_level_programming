@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 def islower(c):
-    lis = " abcdefghijklmnopqrstuvwxyz"
+    lis = "abcdefghijklmnopqrstuvwxyz"
     if c in lis:
         return True
-    else:
-        return False
+    return False
