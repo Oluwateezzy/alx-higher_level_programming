@@ -19,7 +19,7 @@ int is_palindrome(listint_t **head)
 		count = count + 1;
 		*head = (*head)->next;
 	}
-	list = malloc(sizeof(int *) * (count + 1));
+	list = malloc(sizeof(int *) * (count));
 	if (list == NULL)
 		return (0);
 	i = 0;
