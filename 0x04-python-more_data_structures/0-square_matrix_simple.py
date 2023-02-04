@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    copy = [i for i in matrix]
-    copy = [x * x for y in copy for x in y]
-    return copy
+    copy = matrix.copy()
+
+    for i in range(len(matrix)):
+        copy[i] = list(map(lambda x: x ** 2, matrix[i]))
+    return (copy)
