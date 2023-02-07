@@ -2,5 +2,10 @@
 def best_score(a_dictionary):
     if a_dictionary is None:
         return None
-    max = sorted(list(a_dictionary.values()))
-    return (max[-1])
+    max = 0
+    str = ""
+    for a in a_dictionary.keys():
+        if a_dictionary[a] > max:
+            max = a_dictionary[a]
+            str = a
+    return (str)
