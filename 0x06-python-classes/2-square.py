@@ -6,9 +6,9 @@ class Square:
     """Class Square"""
     def __init__(self, size=0):
         """Constructor"""
-        try:
-            self.__size = self
-        except ValueError:
-            print("size must be >= 0")
-        except TypeError:
-            print("size must be an integer")
+        if type(size) is not int:
+            raise (TypeError("size must be an integer"))
+        elif size < 0:
+            raise (ValueError("size must be >= 0"))
+        else:
+            self.__size = size
