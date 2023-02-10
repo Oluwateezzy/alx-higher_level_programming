@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-"""Class Square"""
+"""
+Class Square
+- size, position private properties
+- method of area and method of print_square
+- getter and setters.
+"""
 
 
 class Square:
