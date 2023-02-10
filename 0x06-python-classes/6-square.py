@@ -9,6 +9,7 @@ Class Square
 
 class Square:
     """Class Square"""
+
     def __init__(self, size=0, position=(0, 0)):
         """Constructor"""
         self.__size = size
