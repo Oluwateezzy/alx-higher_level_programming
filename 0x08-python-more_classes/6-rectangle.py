@@ -9,6 +9,8 @@ class Rectangle:
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
+        """instantiation"""
+
         if type(width) is not int:
             raise TypeError("width must be an integer")
         if type(height) is not int:
