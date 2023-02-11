@@ -28,7 +28,6 @@ class Rectangle:
                 res += "#" * self.__width + "\n"
         return res
 
-
     @property
     def width(self):
         """get width of rectangle"""
@@ -68,4 +67,3 @@ class Rectangle:
             return 0
         perimeter = 2 * (self.__width + self.__height)
         return perimeter
-
