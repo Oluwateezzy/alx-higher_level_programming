@@ -17,7 +17,7 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__width = width
         self.__height = height
-        number_of_instances += 1
+        Rectangle.number_of_instances += 1
 
     def __str__(self):
         """object representation"""
@@ -36,7 +36,8 @@ class Rectangle:
         return f'Rectangle({str(self.__width)}, {str(self.__height)})'
 
     def __del__(self):
-        number_of _instances -= 1
+        """del instance of class"""
+        Rectangle.number_of _instances -= 1
         print("Bye rectangle...")
 
     @property
