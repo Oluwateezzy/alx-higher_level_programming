@@ -1,11 +1,15 @@
 #!/usr/bin/python3
-"""Class Rectangle"""
+"""
+Class Rectangle
+"""
 
 
 class Rectangle:
-    """Class Rectangle"""
+    """
+    Class Rectangle
+    """
 
-    #public
+    # public
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
