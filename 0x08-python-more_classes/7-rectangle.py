@@ -37,9 +37,9 @@ class Rectangle:
             return ""
         for i in range(self.__height):
             if i == self.__height - 1:
-                res += Rectangle.print_symbol * self.__width
+                res += str(self.print_symbol) * self.__width
             else:
-                res += Rectangle.print_symbol * self.__width + "\n"
+                res += str(self.print_symbol) * self.__width + "\n"
         return res
 
     def __repr__(self):
