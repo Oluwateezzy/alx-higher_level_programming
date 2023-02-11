@@ -16,7 +16,7 @@ class Rectangle:
         self.__width = width
         self.__height = height
 
-    def __repr__(self):
+    def __str__(self):
         """object representation"""
         res = ""
         if self.__width == 0 or self.__height == 0:
