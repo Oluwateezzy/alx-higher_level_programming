@@ -25,7 +25,7 @@ class Rectangle:
             if i == self.__height - 1:
                 res += "#" * self.__width
             else:
-                res += "#" * self.__height + "\n"
+                res += "#" * self.__width + "\n"
         return res
 
 
