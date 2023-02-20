@@ -22,14 +22,6 @@ Usage
     >>> say_my_name("Cornelius Maxwell", "Jones II")
     My name is Cornelius Maxwell Jones II
 
-The parameter ```last_name``` is optional. If no last name is provided,
-an empty string is printed instead.
-
-::
-
-    >>> say_my_name("Brennan")
-    My name is Brennan
-
 Invalid Names
 =============
 
