@@ -11,7 +11,7 @@ def matrix_divided(matrix, div):
     Raises:
     TypeError
     Return:
-    a new list
+    a new list of division
     """
     for i in range(len(matrix)):
         for j in range(len(matrix[i])):
