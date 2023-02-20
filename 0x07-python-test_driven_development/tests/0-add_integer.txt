@@ -112,6 +112,6 @@ And float with infinity.
 
 ::
 
-    >>> add_integer("hello", "there")
+    >>> add_integer(float('inf'))
     Traceback (most recent call last):
-    TypeError: a must be an integer
+    OverflowError: cannot convert float infinity to integer
