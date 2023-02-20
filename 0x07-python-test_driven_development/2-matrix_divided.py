@@ -11,7 +11,7 @@ def matrix_divided(matrix, div):
     Raises:
     TypeError
     Return:
-    a new list of division
+    a 11new list of division
     """
     if (matrix is None or len(matrix) == 0):
         raise TypeError("matrix must be a matrix (list of lists) of"
