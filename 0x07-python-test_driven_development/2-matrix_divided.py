@@ -14,4 +14,4 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by Zero")
     
-    return list(map(lambda x: list(map(lambda y: "{:.2f}".format(y / div), x)), matrix))
+    return list(map(lambda x: list(map(lambda y: round(y / div, 2), x)), matrix))
