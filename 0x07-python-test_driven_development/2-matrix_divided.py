@@ -13,7 +13,7 @@ def matrix_divided(matrix, div):
     Return:
     a new list of division
     """
-    if (matrix == None):
+    if (matrix is None or len(matrix) == 0):
         raise TypeError("matrix must be a matrix (list of lists) of"
                         " integers/floats")
     for i in range(len(matrix)):
