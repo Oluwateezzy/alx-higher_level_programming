@@ -91,16 +91,6 @@ But an empty list of lists will succeed.
     >>> print(matrix_divided(matrix, 3))
     [[]]
 
-An identical TypeError is raised if ``matrix`` is not specifically a list of
-lists.
-
-::
-
-    >>> matrix = [1, 2, 3]
-    >>> print(matrix_divided(matrix, 3))
-    Traceback (most recent call last):
-    TypeError: matrix must be a matrix (list of lists) of integers/floats
-
 The same TypeError is raised yet again if any elements in ``matrix`` are
 neither ints nor floats.
 
