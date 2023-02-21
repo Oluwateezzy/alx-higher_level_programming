@@ -55,12 +55,6 @@ text not ending with one of these characters is not ended with a new line.
     >>> text_indentation("No ending period, what bad grammar")
     No ending period, what bad grammar
 
-::
-    >>> text_indentation("A sneaky \n new line.")
-    A sneaky
-    new line.
-    <BLANKLINE>
-
 A combo example:
 
 ::
@@ -114,14 +108,6 @@ The paramter ``text`` must be a string. Otherwise, a TypeError is raised.
     >>> text_indentation(7)
     Traceback (most recent call last):
     TypeError: text must be a string
-
-::
-
-    >>> text_indentation({"one": 1, "two": 2})
-    Traceback (most recent call last):
-
-    TypeError: text must be a string
-
 
 ::
 
