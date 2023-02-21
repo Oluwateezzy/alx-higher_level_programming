@@ -12,4 +12,4 @@ except FileNotFoundError:
 argc = len(sys.argv)
 for i in range(1, argc):
     load.append(sys.argv[i])
-save_to_json_file(load)
+save_to_json_file(load, "add_item.json")
