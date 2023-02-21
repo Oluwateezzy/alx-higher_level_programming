@@ -2,6 +2,7 @@
 """json string to object"""
 import json
 
+
 def from_json_string(my_str):
     """json string to object"""
 
