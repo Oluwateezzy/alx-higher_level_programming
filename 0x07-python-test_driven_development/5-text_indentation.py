@@ -27,3 +27,5 @@ def text_indentation(text):
         else:
             print(strD[i].strip())
             print()
+text_indentation("\n\n jkssdhdskh")
+text_indentation("Let's print a new-line! Here goes:\nPrinted.")
