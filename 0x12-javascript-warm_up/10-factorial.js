@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const { argv } =  require("process");
+const { argv } = require('process');
 
 function fact (a) {
   if (Number(a) === 'NaN') return Number(a);
