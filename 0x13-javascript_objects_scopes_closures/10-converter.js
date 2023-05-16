@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const converter =  (base) => {
+function converter (base) {
   return (num) => {
     return num.toString(base);
   };
