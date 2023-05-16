@@ -5,3 +5,4 @@ function converter (base) {
     return num.toString(base);
   };
 };
+module.exports = { converter };
