@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const dict = require('./101-data.js').dict;
 const newD = {};
-for (user in dict) {
+for (const user in dict) {
   if (dict[user] in newD) {
     newD[dict[user]].push(user);
   } else {
