@@ -1,13 +1,5 @@
 #!/usr/bin/node
-
-const dict = {
-  89: 1,
-  90: 2,
-  91: 1,
-  92: 3,
-  93: 1,
-  94: 2
-};
+const dict = require('./101-data.js').dict;
 const newD = {};
 for (user in dict) {
   if (dict[user] in newD) {
