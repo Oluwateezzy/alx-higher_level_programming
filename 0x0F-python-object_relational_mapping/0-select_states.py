@@ -27,4 +27,4 @@ def listall():
         print(row)
 
 if __name__ == '__main__':
-    list_all()
+    listall()
