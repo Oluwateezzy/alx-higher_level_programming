@@ -9,5 +9,4 @@ const content1 = fs.readFileSync(file1, 'utf8');
 const content2 = fs.readFileSync(file2, 'utf8');
 
 const concat = content1 + content2;
-console.log(concat);
 fs.writeFileSync(d_file, concat, 'utf8');
