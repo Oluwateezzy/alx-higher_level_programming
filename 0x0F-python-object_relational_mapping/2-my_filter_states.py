@@ -15,7 +15,7 @@ def listall():
     connect = MySQLdb.connect(host='localhost', port=3306,
                               user=user, passwd=pas, db=db)
     cursor = connect.cursor()
-    cursor.execute('SELECT * FROM states WHERE name LIKE "{:s}" ORDER BY id ASC;'.format(state))
+    cursor.execute('SELECT * FROM states WHERE BINARY name = "{}" ORDER BY id ASC;'.format(state))
     rows = cursor.fetchall()
     cursor.close()
     connect.close()
