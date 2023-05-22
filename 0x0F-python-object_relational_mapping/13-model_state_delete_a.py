@@ -18,10 +18,11 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    states = session.query(State).order_by(State.id).all()
+    states = session.query(State).filter(
+                           State.name.op('regexp')('.*a+.*')
+                           )
     for state in states:
-        if 'a' in state.name:
-            session.delete(state)
+        session.delete(state)
     session.commit()
 
     session.close()
