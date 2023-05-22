@@ -14,7 +14,7 @@ def listall():
     connect = MySQLdb.connect(host='localhost', port=3306,
                               user=user, passwd=pas, db=db)
     cursor = connect.cursor()
-    cursor.execute(('SELECT * FROM states WHERE name regexp "^N.*" ' +
+    cursor.execute('SELECT * FROM states WHERE name regexp "^N.*" ' +
                     'ORDER BY states.id ASC')
     rows = cursor.fetchall()
     cursor.close()
