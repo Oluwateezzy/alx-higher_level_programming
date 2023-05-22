@@ -15,7 +15,8 @@ def listall():
     connect = MySQLdb.connect(host='localhost', port=3306,
                               user=user, passwd=pas, db=db)
     cursor = connect.cursor()
-    cursor.execute('SELECT * FROM states WHERE name = %s ORDER BY id ASC;', (state,))
+    cursor.execute('SELECT * FROM states WHERE name = %s\
+                   ORDER BY id ASC;', (state,))
     rows = cursor.fetchall()
     cursor.close()
     connect.close()
