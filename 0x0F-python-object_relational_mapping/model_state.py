@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
-''' Write a python file that contains the class definition '''
-''' of a State and an instance '''
+'''
+    Python file that contains the class definition of a
+    State and an instance Base = declarative_base()
+'''
 
 import sqlalchemy
 from sqlalchemy import Column, Integer, String
