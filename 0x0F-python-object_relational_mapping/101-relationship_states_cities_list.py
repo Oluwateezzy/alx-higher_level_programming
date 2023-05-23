@@ -19,10 +19,8 @@ if __name__ == "__main__":
                            .format(user, sql, db), pool_pre_ping=True)
     Base.metadata.create_all(engine)
     session = Session(engine)
-    rows = session.query(State).order_by(State.id).all()
-
-    for state in rows:
-        print(f"{state.id}: {state.name}")
+    for state in session.query(State).order_by(State.id):
+        print("{}: {}".format(state.id, state.name))
         for city in state.cities:
-            print(f"    {city.id}: {city.name}")
+            print("    {}: {}".format(city.id, city.name))
     session.close()
