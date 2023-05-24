@@ -5,10 +5,10 @@ request.get(url, (error, response, body) => {
   if (error) console.error(error);
   else {
     const films = JSON.parse(body).results;
-    let count = 0;
     console.log(films.reduce((count, movie) => {
       return movie.characters.find((character) => character.endsWith('/18/'))
-        ? count + 1 : count;
+        ? count + 1
+        : count;
     }, 0));
   }
 });
