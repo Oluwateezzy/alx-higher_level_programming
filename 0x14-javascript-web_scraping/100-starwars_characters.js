@@ -10,7 +10,7 @@ request.get(url, (error, response, body) => {
       request.get(character, (errors, response, body) => {
         if (!error) {
           console.log(JSON.parse(body).name);
-	}
+        }
       });
     });
   }
