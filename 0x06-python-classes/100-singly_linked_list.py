@@ -1,11 +1,14 @@
 #!/usr/bin/python3
+"""module list"""
+
+
 class Node:
     """Node class"""
     def __init__(self, data, next_node=None):
         """Constructor"""
         self.data = data
         self.next_node = next_node
-    
+
     @property
     def data(self):
         """data getter"""
@@ -31,7 +34,6 @@ class Node:
         self.__data = value
 
 
-
 class SinglyLinkedList:
     """List class"""
     def __init__(self):
@@ -49,7 +51,7 @@ class SinglyLinkedList:
                 output += str(current.data) + "\n"
             current = current.next_node
         return output
-    
+
     def sorted_insert(self, value):
         """sorted list"""
         new_node = Node(value)
