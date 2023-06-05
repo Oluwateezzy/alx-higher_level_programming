@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Class Node"""
 class Node:
+    """Node class"""
     def __init__(self, data, next_node=None):
         """Constructor"""
         self.data = data
@@ -31,8 +31,9 @@ class Node:
         self.__data = value
 
 
-"""Class SinglyLinkedList"""
+
 class SinglyLinkedList:
+    """List class"""
     def __init__(self):
         """constructor"""
         self.head = None
