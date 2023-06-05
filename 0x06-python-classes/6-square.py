@@ -1,15 +1,9 @@
 #!/usr/bin/python3
-"""
-Class Square
-- size, position private properties
-- method of area and method of print_square
-- getter and setters.
-"""
+"""Class Square"""
 
 
 class Square:
     """Class Square"""
-
     def __init__(self, size=0, position=(0, 0)):
         """Constructor"""
         self.__size = size
@@ -22,23 +16,11 @@ class Square:
     @property
     def size(self):
         """size getter"""
-        return (self.__size)
+        return self.__size
 
     @property
     def position(self):
-        """position getter"""
         return self.__position
-
-    @position.setter
-    def position(self, value):
-        """position setter"""
-        if (type(value) is not tuple) or (len(value) != 2)\
-                or (value[0] < 0) or (value[1] < 0)\
-                type(value[0]) is not int\
-                type(value[1]) is not int:
-            raise (TypeError("position must be a tuple of 2 positive integer"))
-        else:
-            self.__position = value
 
     @size.setter
     def size(self, value):
@@ -50,13 +32,23 @@ class Square:
         else:
             self.__size = value
 
+    @position.setter
+    def position(self, value):
+        if type(value) is not tuple or len(value) != 2 or \
+                not isinstance(value[0], int) or\
+                not isinstance(value[1], int) or\
+                value[0] < 0 or value[1] < 0:
+            raise (TypeError("position must be a tuple of 2 positive integers"))
+        else:
+            self.__position = value
+
     def my_print(self):
         """print square"""
         if self.__size == 0:
             print()
-        else:
-            for bl in range(self.__position):
-                print()
-            for rw in range(self.__size):
-                print(" " * self.__position[0], end="")
-                print("#" * self.__size)
+            return
+
+        for _ in range(self.__position[1]):
+            print()
+        for _ in range(self.size):
+            print(' ' * self.__position[0] + "#" * self.size)
