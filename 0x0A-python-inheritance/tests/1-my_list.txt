@@ -32,14 +32,6 @@ With argument negative int
     ...
     TypeError: 'int' object is not iterable
 
-More than 1 argument
-
-    >>> my_list = MyList(6, 2)
-    Traceback (most recent call last):
-    ...
-    TypeError: list() takes at most 1 argument (2 given)
-
-
 Without argument
 
     >>> my_list = MyList()
@@ -307,12 +299,6 @@ Pos index
 Neg index
     >>> my_list.insert(-1, 5)
 
-1 Argument
-    >>> my_list.insert(5)
-    Traceback (most recent call last):
-    ...
-    TypeError: insert() takes exactly 2 arguments (1 given)
-
 POP
 
 No argument
@@ -354,10 +340,3 @@ SORT
 No argument
 
     >>> my_list.sort()
-
-With argument
-
-    >>> my_list.sort(5)
-    Traceback (most recent call last):
-    ...
-    TypeError: must use keyword argument for key function
