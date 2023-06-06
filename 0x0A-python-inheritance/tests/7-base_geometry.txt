@@ -171,3 +171,10 @@ String
     Traceback (most recent call last):
     ...
     TypeError: Test must be an integer
+
+Boolean
+
+    >>> bg.integer_validator("Test", True)
+    Traceback (most recent call last):    
+    ...
+    TypeError: Test must be an integer
